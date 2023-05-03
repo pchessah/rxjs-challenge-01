@@ -1,0 +1,44 @@
+<blockquote>
+  Create a single Observable stream to watch for focus being present in the area
+</blockquote>
+<h2>{{ focussedArea$ | async }}</h2>
+test
+<p>
+  <label>
+    Just an input
+    <input placeholder="Focus can be here" />
+  </label>
+  <button>I'm a button</button>
+</p>
+<div tabindex="0" (focus)="trackFocus($event)" class="focus">
+  <h2 tabindex="1">Track focus in this block</h2>
+  <p tabindex="2">
+    <select>
+      <option>Option 1</option>
+      <option>Option 1</option>
+    </select>
+  </p>
+
+  <p tabindex="3">
+    <input type="date" />
+    <button>I'm a button</button>
+  </p>
+
+  <p tabindex="4">
+    <label tabindex="5">
+      <input type="radio" />
+      Option 1
+    </label>
+    <label tabindex="6">
+      <input type="radio" />
+      Option 2
+    </label>
+  </p>
+</div>
+<p>
+  <label>
+    Just an input
+    <input placeholder="Focus can be here" />
+  </label>
+  <button>I'm a button</button>
+</p>
