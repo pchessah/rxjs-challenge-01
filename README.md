@@ -1,3 +1,2 @@
 # rxjs-challenge-01
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/rxjs-challenge-01-6pxvjx)
+Create a single Observable stream to watch for focus being present in the area
